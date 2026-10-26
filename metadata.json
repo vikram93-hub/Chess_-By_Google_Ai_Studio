@@ -1,0 +1,6 @@
+{
+  "name": "Grandmaster Dark Chess",
+  "description": "Tactical dark-mode chess featuring a challenging single hard-level AI bot, real-time online multiplayer via challenge links, move clocks, captured pieces, and tournament-grade themes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="knightGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#cbd5e1" />
+      <stop offset="70%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#38bdf8" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded card -->
+  <rect width="512" height="512" rx="108" fill="url(#bg)" />
+  <rect x="6" y="6" width="500" height="500" rx="102" fill="none" stroke="url(#borderGrad)" stroke-width="4" stroke-opacity="0.6" />
+
+  <!-- Subtle chessboard watermark grid in corner -->
+  <g opacity="0.05" fill="#ffffff">
+    <rect x="40" y="40" width="48" height="48" />
+    <rect x="136" y="40" width="48" height="48" />
+    <rect x="88" y="88" width="48" height="48" />
+    <rect x="424" y="424" width="48" height="48" />
+    <rect x="328" y="424" width="48" height="48" />
+    <rect x="376" y="376" width="48" height="48" />
+  </g>
+
+  <!-- Knight Figure with Shadow -->
+  <g filter="url(#glow)">
+    <!-- Main Knight Body -->
+    <path
+      d="M362 384H150c0-12 10-24 24-24h164c14 0 24 12 24 24zm-22-38c-8-14-16-36-16-64 0-14 3-27 8-40 4-10 6-22 4-33-3-15-12-29-25-37-12-7-26-9-40-5-8 2-15 1-22-2-12-5-20-15-22-28-2-10 1-21 8-29 4-4 3-10-1-14s-10-3-14 1c-13 14-17 33-12 51 3 10 9 19 18 24 4 3 6 7 6 12 0 4-2 8-5 11-13 11-20 28-18 45 2 15 11 28 24 35 7 4 11 11 11 19 0 3-1 6-2 9-8 22-13 44-13 67 0 7 2 13 6 18h109z"
+      fill="url(#knightGrad)"
+    />
+
+    <!-- Knight Mane Details & Highlights -->
+    <path
+      d="M312 186c-4-9-10-18-18-25-8-7-18-12-29-14 8 13 13 28 15 44 4 0 8-1 12-2 7-1 14-2 20-3z"
+      fill="url(#goldAccent)"
+      opacity="0.85"
+    />
+
+    <!-- Eye of the Knight -->
+    <circle cx="218" cy="204" r="8" fill="#38bdf8" />
+    <circle cx="220" cy="202" r="3" fill="#ffffff" />
+
+    <!-- Nostril / Muzzle accent -->
+    <path
+      d="M174 246c3 5 9 8 15 7"
+      fill="none"
+      stroke="#1e293b"
+      stroke-width="4"
+      stroke-linecap="round"
+    />
+
+    <!-- Pedestal Base Details -->
+    <rect x="136" y="388" width="240" height="24" rx="12" fill="url(#knightGrad)" />
+    <rect x="156" y="416" width="200" height="12" rx="6" fill="#334155" />
+    <rect x="180" y="420" width="152" height="4" rx="2" fill="url(#goldAccent)" />
+  </g>
+</svg>
